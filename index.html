@@ -53,8 +53,8 @@
             width: 100%;
             overflow-x: hidden;
             font-family: 'Comic Neue', sans-serif;
-            background: linear-gradient(to bottom, #e8f0f5, #c8e6c9);
-            color: #333;
+            background: linear-gradient(to bottom, #d4e4d4, #f5e6cc);
+            color: #333333;
         }
         .container {
             display: flex;
@@ -66,24 +66,24 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
         h1 {
             font-size: 2.5rem;
-            color: #2c6b3f;
+            color: #1b5e20;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
             margin-bottom: 1rem;
             text-align: center;
         }
         h2 {
             font-size: 2rem;
-            color: #1e88e5;
+            color: #0277bd;
             margin: 1rem 0;
             text-align: center;
         }
         h3 {
             font-size: 1.5rem;
-            color: #f57c00;
+            color: #d84315;
             margin: 0.8rem 0;
             text-align: center;
         }
@@ -91,9 +91,10 @@
             font-family: Arial, sans-serif;
             font-size: 1.1rem;
             line-height: 1.6;
+            color: #333333;
         }
         button {
-            background: linear-gradient(to right, #1e88e5, #42a5f5);
+            background: linear-gradient(to right, #0288d1, #4fc3f7);
             color: white;
             padding: 0.8rem 1.5rem;
             border: none;
@@ -103,12 +104,12 @@
             font-weight: bold;
             margin: 0.5rem auto;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             display: block;
         }
         button:hover {
             transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
         }
         button:disabled {
             background: #b0bec5;
@@ -116,23 +117,23 @@
             box-shadow: none;
         }
         .reset-button {
-            background: linear-gradient(to right, #d32f2f, #ef5350);
+            background: linear-gradient(to right, #c62828, #ef5350);
         }
         .reset-button:hover {
-            background: linear-gradient(to right, #b71c1c, #d32f2f);
+            background: linear-gradient(to right, #b71c1c, #c62828);
         }
         .back-button {
-            background: linear-gradient(to right, #f57c00, #ff9800);
+            background: linear-gradient(to right, #ef6c00, #ffa726);
         }
         .back-button:hover {
-            background: linear-gradient(to right, #e65100, #f57c00);
+            background: linear-gradient(to right, #e65100, #ef6c00);
         }
         .story-text {
             text-align: left;
             line-height: 1.8;
             margin: 1.5rem 0;
             font-size: 1.2rem;
-            background: rgba(200, 230, 201, 0.2);
+            background: #e8f5e9;
             padding: 1rem;
             border-radius: 10px;
         }
@@ -140,7 +141,7 @@
             margin: 1.5rem 0;
             text-align: left;
             font-size: 1.1rem;
-            background: #e3f2fd;
+            background: #e1f5fe;
             padding: 1rem;
             border-radius: 8px;
         }
@@ -155,7 +156,7 @@
         }
         .feedback {
             font-style: italic;
-            color: #2c6b3f;
+            color: #1b5e20;
             margin-top: 0.5rem;
             font-size: 1rem;
         }
@@ -176,15 +177,15 @@
             font-weight: bold;
             font-size: 1.1rem;
             transition: background 0.3s, transform 0.2s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
         .map-point.completed {
-            background: linear-gradient(to right, #2c6b3f, #4caf50);
+            background: linear-gradient(to right, #388e3c, #81c784);
             color: white;
         }
         .map-point.locked {
-            background: #ffca28;
+            background: #ffb300;
             cursor: not-allowed;
         }
         .map-point:hover:not(.locked) {
@@ -199,7 +200,7 @@
             height: auto;
             border-radius: 12px;
             margin: 1rem auto;
-            border: 3px solid #2c6b3f;
+            border: 3px solid #1b5e20;
             transition: transform 0.3s;
             display: block;
         }
@@ -213,9 +214,9 @@
             transform: translate(-50%, -50%);
             background: #ffffff;
             padding: 2rem;
-            border: 4px solid #1e88e5;
+            border: 4px solid #0288d1;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
             z-index: 1000;
             max-width: 90%;
             width: 400px;
@@ -227,11 +228,11 @@
             border-radius: 8px;
             margin: 1rem auto;
             overflow: hidden;
-            border: 2px solid #2c6b3f;
+            border: 2px solid #1b5e20;
         }
         .progress-bar {
             height: 30px;
-            background: linear-gradient(to right, #4caf50, #81c784);
+            background: linear-gradient(to right, #388e3c, #81c784);
             width: 0%;
             transition: width 0.5s ease-in-out;
             text-align: center;
@@ -243,7 +244,7 @@
         input[type="text"] {
             padding: 0.8rem;
             margin: 0.5rem auto;
-            border: 2px solid #1e88e5;
+            border: 2px solid #0288d1;
             border-radius: 8px;
             width: 80%;
             max-width: 300px;
@@ -268,7 +269,7 @@
         .badges-container img {
             width: 60px;
             height: 60px;
-            border: 3px solid #f57c00;
+            border: 3px solid #d84315;
             border-radius: 50%;
             transition: transform 0.3s;
             margin: 0 auto;
@@ -280,20 +281,20 @@
             margin: 0.5rem 0;
             font-size: 1rem;
             font-weight: bold;
-            color: #2c6b3f;
+            color: #1b5e20;
             text-align: center;
         }
         .skills-container {
             margin: 1.5rem 0;
             text-align: left;
             font-size: 1.1rem;
-            background: rgba(255, 245, 157, 0.2);
+            background: #fff3e0;
             padding: 1rem;
             border-radius: 10px;
         }
         .skills-container p {
             margin: 0.5rem 0;
-            color: #2c6b3f;
+            color: #1b5e20;
         }
         @media (max-width: 600px) {
             h1 {
@@ -426,7 +427,7 @@
                 title: "La Madremonte",
                 image: "images/madremonte.jpg",
                 level: "Básico",
-                text: "La Madremonte cuida los bosques del Cauca. Es como una señora cubierta de musgo y hojas. Vive cerca de los ríos y sus ojos brillan rojos en la noche. Controla la lluvia y los vientos para proteger la naturaleza. Los niños del pueblo la respetan y evitan cortar árboles para no hacerla enojar.",
+                text: "La Madremonte es una figura mitológica que gobierna sobre los bosques y selvas de Colombia. Conocida también como Madreselva, es la deidad de la vegetación, las lluvias y los vientos. Aunque su forma física no es fija, se dice que aparece a los campesinos como una mujer mitad monte, mitad humana, cubierta de musgo y con ojos rojos y fulgurantes. La Madremonte es vista como una protectora de la naturaleza, castigando a aquellos que dañan el medio ambiente o desobedecen las reglas de la selva. Su presencia es un recordatorio del poder y la fuerza de la naturaleza, y de la necesidad de respetarla. Los niños del pueblo la respetan y evitan cortar árboles para no hacerla enojar.",
                 questions: [
                     {
                         question: "¿Qué protege la Madremonte en el Cauca?",
@@ -475,7 +476,7 @@
                 title: "El Mohán",
                 image: "images/mohan.jpg",
                 level: "Intermedio",
-                text: "El Mohán vive en los ríos profundos del Cauca, fumando un tabaco grande que ahuyenta insectos. Su cara parece quemada por el sol, con cabello largo y ojos que asustan. Encanta a las lavanderas con su música y las lleva a cuevas secretas donde guarda tesoros. Nadie sabe dónde están esas cuevas, pero los pescadores dicen que el Mohán protege los ríos.",
+                text: "El Mohán, conocido también como el 'Hombre de la cueva', es un ser mitológico que habita en los ríos y selvas de Colombia. Protector de la naturaleza, este espíritu es especialmente temido por los pescadores, a quienes atrae con su música y belleza para arrastrarlos a las profundidades de los ríos. Se dice que El Mohán es un guardián de los ríos y castiga a aquellos que no respetan la naturaleza, tomando la forma de un hombre corpulento y salvaje, con una larga barba y cabello enmarañado. Su historia, con raíces en las culturas indígenas, es un recordatorio de la importancia de respetar la naturaleza. Nadie sabe dónde están esas cuevas, pero los pescadores dicen que el Mohán protege los ríos.",
                 questions: [
                     {
                         question: "¿Dónde vive el Mohán?",
@@ -524,7 +525,7 @@
                 title: "El Hombre Caimán",
                 image: "images/hombre_caiman.jpg",
                 level: "Avanzado",
-                text: "El Hombre Caimán era un pescador que vivía cerca del Río Magdalena. Quería espiar a las mujeres mientras se bañaban, así que visitó a un brujo para convertirse en caimán. El brujo le dio una pócima, pero algo salió mal: solo su cabeza volvió a ser humana. Ahora, como un ser mitad hombre, mitad caimán, vaga por el río, y las mujeres dejaron de ir por miedo. Los pescadores cuentan que aún lo ven, buscando redención.",
+                text: "El Hombre Caimán es una leyenda muy popular en la región del Caribe colombiano. Se cuenta que un hombre, obsesionado con espiar a las mujeres mientras se bañaban en el río, hizo un pacto con un brujo para convertirse en caimán durante el día y volver a ser humano por la noche. Sin embargo, algo salió mal en el hechizo, y quedó atrapado en la forma de un caimán con cabeza de hombre. Este ser deambula por los ríos, buscando recuperar su forma humana, pero aterrorizando a todos los que se acercan. El Hombre Caimán es una advertencia de las consecuencias de ceder a los deseos oscuros y la curiosidad maliciosa. Ahora, como un ser mitad hombre, mitad caimán, vaga por el río, y las mujeres dejaron de ir por miedo. Los pescadores cuentan que aún lo ven, buscando redención.",
                 questions: [
                     {
                         question: "¿Por qué el pescador visitó al brujo?",
@@ -575,21 +576,40 @@
             studentName: "",
             level: "Básico",
             completedStories: [],
-            completedLevels: ["Básico"], // Start with Básico unlocked
+            completedLevels: ["Básico"],
             skills: { vocabulario: 0, inferencia: 0, secuencia: 0 },
             badges: [],
             answeredQuestions: {},
             correctAnswers: {},
-            performance: [] // For analytics
+            performance: []
         };
 
-        // Initialize from LocalStorage
-        if (localStorage.getItem("readingAdventure")) {
-            state = JSON.parse(localStorage.getItem("readingAdventure"));
-            document.getElementById("student-name").value = state.studentName;
-            document.getElementById("start-button").classList.add("hidden");
-            document.getElementById("continue-button").classList.remove("hidden");
-            updateBadgeVisibility();
+        // Initialize from LocalStorage with error handling
+        try {
+            const savedState = localStorage.getItem("readingAdventure");
+            if (savedState) {
+                state = JSON.parse(savedState);
+                document.getElementById("student-name").value = state.studentName || "";
+                if (state.studentName) {
+                    document.getElementById("start-button").classList.add("hidden");
+                    document.getElementById("continue-button").classList.remove("hidden");
+                }
+                updateBadgeVisibility();
+            }
+        } catch (e) {
+            console.error("Error loading state from LocalStorage:", e);
+            localStorage.removeItem("readingAdventure");
+            state = {
+                studentName: "",
+                level: "Básico",
+                completedStories: [],
+                completedLevels: ["Básico"],
+                skills: { vocabulario: 0, inferencia: 0, secuencia: 0 },
+                badges: [],
+                answeredQuestions: {},
+                correctAnswers: {},
+                performance: []
+            };
         }
 
         // DOM elements
@@ -617,29 +637,36 @@
             document.getElementById("insignia-sabio").classList.toggle("hidden", !state.badges.includes("Sabio del Magdalena"));
         }
 
+        // Validate student name
+        function validateName(name) {
+            return name.trim().length >= 2 && /^[a-zA-Z\s]+$/.test(name.trim());
+        }
+
         // Welcome section logic
         document.getElementById("start-button").addEventListener("click", () => {
             const nameInput = document.getElementById("student-name");
-            if (nameInput.value.trim()) {
-                state.studentName = nameInput.value.trim();
-                localStorage.setItem("readingAdventure", JSON.stringify(state));
-                showSection("level");
-                updateLevelMenu();
-            } else {
-                showFeedback("Por favor, ingresa tu nombre.");
+            const name = nameInput.value;
+            if (!validateName(name)) {
+                showFeedback("Por favor, ingresa un nombre válido (mínimo 2 letras, solo letras y espacios).");
+                return;
             }
+            state.studentName = name.trim();
+            localStorage.setItem("readingAdventure", JSON.stringify(state));
+            showSection("level");
+            updateLevelMenu();
         });
 
         document.getElementById("continue-button").addEventListener("click", () => {
             const nameInput = document.getElementById("student-name");
-            if (nameInput.value.trim()) {
-                state.studentName = nameInput.value.trim();
-                localStorage.setItem("readingAdventure", JSON.stringify(state));
-                showSection("level");
-                updateLevelMenu();
-            } else {
-                showFeedback("Por favor, ingresa tu nombre.");
+            const name = nameInput.value;
+            if (!validateName(name)) {
+                showFeedback("Por favor, ingresa un nombre válido (mínimo 2 letras, solo letras y espacios).");
+                return;
             }
+            state.studentName = name.trim();
+            localStorage.setItem("readingAdventure", JSON.stringify(state));
+            showSection("level");
+            updateLevelMenu();
         });
 
         document.getElementById("reset-button").addEventListener("click", () => {
@@ -725,7 +752,7 @@
             updateStoryProgress(storyId);
         }
 
-        // Handle answer with immediate feedback (MAD)
+        // Handle answer with immediate feedback
         function handleAnswer(storyId, questionIndex, selectedValue, correctValue, skill, hint, currentLevel, questionLevel) {
             const isCorrect = parseInt(selectedValue) === correctValue;
             const feedbackDiv = document.getElementById(`feedback-q${questionIndex}`);
@@ -747,12 +774,12 @@
             if (isCorrect) {
                 state.skills[skill.toLowerCase()] += 5;
             }
-            state.performance.push({storyId, questionIndex, correct: isCorrect, skill, level: currentLevel});
+            state.performance.push({ storyId, questionIndex, correct: isCorrect, skill, level: currentLevel });
             localStorage.setItem("readingAdventure", JSON.stringify(state));
             updateStoryProgress(storyId);
         }
 
-        // Update story progress bar based on correct answers
+        // Update story progress bar
         function updateStoryProgress(storyId) {
             const correctCount = state.correctAnswers[storyId] ? state.correctAnswers[storyId].filter(a => a === true).length : 0;
             const totalQuestions = stories.find(s => s.id === storyId).questions.filter(q => q.level === state.level).length;
@@ -761,11 +788,18 @@
             document.getElementById("story-progress-bar").innerText = `${progress}%`;
         }
 
+        // Submit answers with validation
         document.getElementById("submit-answers").addEventListener("click", () => {
             const storyId = stories.find(s => s.level === state.level).id;
             const story = stories.find(s => s.id === storyId);
+            const totalQuestions = story.questions.filter(q => q.level === state.level).length;
+            const answeredQuestions = state.answeredQuestions[storyId] || [];
+            if (answeredQuestions.length < totalQuestions || answeredQuestions.includes(undefined)) {
+                showFeedback("Por favor, responde todas las preguntas antes de finalizar la aventura.");
+                return;
+            }
             const score = state.correctAnswers[storyId] ? state.correctAnswers[storyId].filter(a => a === true).length : 0;
-            const total = story.questions.filter(q => q.level === state.level).length;
+            const total = totalQuestions;
             const weakSkill = Object.keys(state.skills).reduce((a, b) => state.skills[a] < state.skills[b] ? a : b);
             if (score / total >= 0.8) {
                 if (state.level === "Básico" && !state.badges.includes("Explorador del Páez")) {
@@ -842,6 +876,7 @@
             updateBadgeVisibility();
         }
 
+        // Teacher report access
         document.getElementById("teacher-report").addEventListener("click", () => {
             const password = prompt("Ingresa la contraseña del docente:");
             if (password === "cauca2025") {
@@ -853,31 +888,36 @@
 
         // Info section logic - Analytics export
         document.getElementById("export-data").addEventListener("click", () => {
-            const studentSheet = [
-                {
-                    Nombre: state.studentName,
-                    Nivel: state.level,
-                    "Niveles Completados": state.completedLevels.join(", "),
-                    "Historias Completadas": state.completedStories.map(id => stories.find(s => s.id === id).title).join(", "),
-                    Vocabulario: state.skills.vocabulario,
-                    Inferencia: state.skills.inferencia,
-                    Secuencia: state.skills.secuencia,
-                    Insignias: state.badges.join(", ") || "Ninguna"
-                }
-            ];
-            const performanceSheet = state.performance.map(p => ({
-                "Historia": stories.find(s => s.id === p.storyId)?.title || p.storyId,
-                "Pregunta Index": p.questionIndex,
-                Correcta: p.correct ? "Sí" : "No",
-                Habilidad: p.skill,
-                Nivel: p.level
-            }));
-            const workbook = XLSX.utils.book_new();
-            const ws1 = XLSX.utils.json_to_sheet(studentSheet);
-            XLSX.utils.book_append_sheet(workbook, ws1, "Estudiante");
-            const ws2 = XLSX.utils.json_to_sheet(performanceSheet);
-            XLSX.utils.book_append_sheet(workbook, ws2, "Desempeño");
-            XLSX.writeFile(workbook, "student_report.xlsx");
+            try {
+                const studentSheet = [
+                    {
+                        Nombre: state.studentName,
+                        Nivel: state.level,
+                        "Niveles Completados": state.completedLevels.join(", "),
+                        "Historias Completadas": state.completedStories.map(id => stories.find(s => s.id === id).title).join(", "),
+                        Vocabulario: state.skills.vocabulario,
+                        Inferencia: state.skills.inferencia,
+                        Secuencia: state.skills.secuencia,
+                        Insignias: state.badges.join(", ") || "Ninguna"
+                    }
+                ];
+                const performanceSheet = state.performance.map(p => ({
+                    "Historia": stories.find(s => s.id === p.storyId)?.title || p.storyId,
+                    "Pregunta Index": p.questionIndex,
+                    Correcta: p.correct ? "Sí" : "No",
+                    Habilidad: p.skill,
+                    Nivel: p.level
+                }));
+                const workbook = XLSX.utils.book_new();
+                const ws1 = XLSX.utils.json_to_sheet(studentSheet);
+                XLSX.utils.book_append_sheet(workbook, ws1, "Estudiante");
+                const ws2 = XLSX.utils.json_to_sheet(performanceSheet);
+                XLSX.utils.book_append_sheet(workbook, ws2, "Desempeño");
+                XLSX.writeFile(workbook, `reporte_${state.studentName || "estudiante"}.xlsx`);
+            } catch (e) {
+                showFeedback("Error al exportar datos. Intenta de nuevo.");
+                console.error("Export error:", e);
+            }
         });
 
         document.getElementById("back-to-home").addEventListener("click", () => {
